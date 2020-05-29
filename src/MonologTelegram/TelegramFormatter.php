@@ -25,9 +25,10 @@ class TelegramFormatter extends NormalizerFormatter
      */
     protected function getException(array $record)
     {
+        $emoji = '⚙️';
         $record['level'] = strtolower($record['level_name']);
         $record['description'] = $record['message'];
 
-        return sprintf('%s: ```%s```', strtoupper($record['level']), $record['description']);
+        return sprintf('%s %s: ```%s```', $emoji, strtoupper($record['level']), $record['description']);
     }
 }
