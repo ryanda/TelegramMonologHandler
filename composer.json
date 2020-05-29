@@ -1,0 +1,19 @@
+{
+    "name": "ryanda/monolog-telegram",
+    "description": "Telegram Monolog Monolog Handler",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{
+        "name": "ryanda",
+        "email": "ryandaputra@gmail.com"
+    }],
+    "require": {
+        "monolog/monolog": "^1.12",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ryanda\\": "src/"
+        }
+    }
+}
